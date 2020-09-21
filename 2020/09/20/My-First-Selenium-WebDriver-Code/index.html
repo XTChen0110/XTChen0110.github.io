@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="theme-color" content="#33474d">
+	<title>My First Selenium WebDriver Code | Chen&#39;s Blog</title>
+	<link rel="stylesheet" href="/css/style.css" />
+	
+      <link rel="alternate" href="/atom.xml" title="Chen&#39;s Blog" type="application/atom+xml">
+    
+<meta name="generator" content="Hexo 5.1.1"></head>
+
+<body>
+
+	<header class="header">
+		<nav class="header__nav">
+			
+				<a href="/archives" class="header__link">Archive</a>
+			
+				<a href="/tags" class="header__link">Tags</a>
+			
+				<a href="/atom.xml" class="header__link">RSS</a>
+			
+		</nav>
+		<h1 class="header__title"><a href="/">Chen&#39;s Blog</a></h1>
+		<h2 class="header__subtitle"></h2>
+	</header>
+
+	<main>
+		<article>
+	
+		<h1>My First Selenium WebDriver Code</h1>
+	
+	<div class="article__infos">
+		<span class="article__date">2020-09-20</span><br />
+		
+		
+	</div>
+
+	
+
+	
+		<h2 id="What-is-Selenium-WebDriver"><a href="#What-is-Selenium-WebDriver" class="headerlink" title="What is Selenium WebDriver?"></a>What is Selenium WebDriver?</h2><p>Selenium Webdriver is an open-source collection of APIs which is used for testing web applications(such as Chrome, Amazon, etc). The Selenium Webdriver tool is used for automating web application testing to verify that it works as expected or not. </p>
+<h2 id="What-types-of-browsers-the-Selenium-supports"><a href="#What-types-of-browsers-the-Selenium-supports" class="headerlink" title="What types of browsers the Selenium supports?"></a>What types of browsers the Selenium supports?</h2><p>As we can tell, the Selenium Webdriver is powerful, so it mainly supports browsers like Firefox, Chrome, Safari and Internet Explorer. It also empowers you to execute cross-browser testing.</p>
+<p>WebDriver also enables you to use a programming language in creating your test scripts (not possible in Selenium IDE).</p>
+<h2 id="My-first-Code-on-Selenium"><a href="#My-first-Code-on-Selenium" class="headerlink" title="My first Code on Selenium!!"></a>My first Code on Selenium!!</h2><p>package Demo;</p>
+<p>import org.openqa.selenium.By;<br>import org.openqa.selenium.WebDriver;<br>import org.openqa.selenium.WebElement;<br>import org.openqa.selenium.chrome.ChromeDriver;</p>
+<p>public class DemoClass {</p>
+<pre><code>public static void main(String[] args) &#123;
+    System.setProperty(&quot;webdriver.chrome.driver&quot;, &quot;E:\\Java\\chromedriver_win32\\chromedriver.exe&quot;);
+    WebDriver driver =new ChromeDriver();
+    driver.get(&quot;http://amazon.com&quot;);
+    driver.manage().window().maximize();
+    WebElement SearchBox = driver.findElement(By.id(&quot;twotabsearchtextbox&quot;));
+    SearchBox.sendKeys(&quot;JBL earphone&quot;);
+    WebElement SearchIcon = driver.findElement(by.className(&quot;nav-input&quot;))
+    SearchIcon.click();
+    js.excuteScript(&quot;window.scrollby(0,4000)&quot;);
+    driver.quit();
+&#125;</code></pre>
+<p>}</p>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>During the time of learning of Jave,I realized that I am interested in being a Q&amp;A Software Engineer Tester.I notice that If I want to become a qualified SE Tester, Selenium is the key to nake it happen.<br>I would like to share my learning experience with you, hope it will be helpful to someone who wants to be the Q&amp;A SE Tester.Although my current role is Data scientist.I have several years of coding experience by using Python.It might be a difference between Python and Java. However, as long as kep learning,it is easy to switch from one language to another.The key is learning all the time.</p>
+<hr>
+<p>##References</p>
+<p><a target="_blank" rel="noopener" href="https://www.guru99.com/introduction-webdriver-comparison-selenium-rc.html">https://www.guru99.com/introduction-webdriver-comparison-selenium-rc.html</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=iA2iasRTMd4&amp;t=1089s">https://www.youtube.com/watch?v=iA2iasRTMd4&amp;t=1089s</a></p>
+
+	
+
+	
+		<span class="different-posts"><a href="/2020/09/20/My-First-Selenium-WebDriver-Code/" onclick="window.history.go(-1); return false;">⬅️ Go back </a></span>
+
+	
+
+</article>
+
+	</main>
+
+	<footer class="footer">
+	<div class="footer-content">
+		
+	      <div class="footer__element">
+	<p>Hi there, <br />welcome to my Blog glad you found it. Have a look around, will you?</p>
+</div>
+
+	    
+	      <div class="footer__element">
+	<h5>Check out</h5>
+	<ul class="footer-links">
+		<li class="footer-links__link"><a href="/archives">Archive</a></li>
+		
+		  <li class="footer-links__link"><a href="/atom.xml">RSS</a></li>
+	    
+		<li class="footer-links__link"><a href="/about">about page</a></li>
+		<li class="footer-links__link"><a href="/tags">Tags</a></li>
+		<li class="footer-links__link"><a href="/categories">Categories</a></li>
+	</ul>
+</div>
+
+	    
+
+		<div class="footer-credit">
+			<span>© 2020 Xiaotian Chen | Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> | Theme <a target="_blank" rel="noopener" href="https://github.com/HoverBaum/meilidu-hexo">MeiliDu</a></span>
+		</div>
+
+	</div>
+
+
+</footer>
+
+
+
+</body>
+
+</html>
